@@ -21,6 +21,15 @@ export default class App extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    // this would be for when state and props have changed and we need to make a new request to an API...
+    // possible optional arguments. (props, prevState);
+  }
+
+  componentWillUnmount(){
+    // This is where you'd save some information before and close the app before you leave
+  }
+
   handleChange(event) {
     console.log(event.target.value);
     this.setState({
